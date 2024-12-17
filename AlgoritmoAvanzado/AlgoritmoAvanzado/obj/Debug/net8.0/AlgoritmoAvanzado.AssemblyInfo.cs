@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AlgoritmoAvanzado")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dce4435ca305de3c821442267e674be03a48605d")]
 [assembly: System.Reflection.AssemblyProductAttribute("AlgoritmoAvanzado")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AlgoritmoAvanzado")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
