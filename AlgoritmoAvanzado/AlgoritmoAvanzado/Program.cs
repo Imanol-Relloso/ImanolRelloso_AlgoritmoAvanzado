@@ -52,3 +52,10 @@ while (listanumeros.Count > 0)
     //Borrarlo de la lista de numeros desordenados
     listanumeros.Remove(maxNumber);
 }
+
+Console.Clear();
+//Mostrar por pantalla la lista ordenada
+for (int i = 0;i < listanumerosord.Count; i++) 
+{ 
+    Console.WriteLine(listanumerosord[i]);
+}
