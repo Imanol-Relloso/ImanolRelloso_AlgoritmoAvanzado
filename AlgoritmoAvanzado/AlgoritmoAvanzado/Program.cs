@@ -1,6 +1,4 @@
-﻿using AlgoritmoAvanzado.Classes;
-
-List<int> listanumeros = new List<int>();
+﻿List<int> listanumeros = new List<int>();
 
 ConsoleKey continuar;
 //Preguntar al usuario los números
@@ -23,7 +21,7 @@ Console.Clear();
 Console.WriteLine("Lista de números proporcionada:");
 do
 {
-    //enseñar la lista desordenada
+    //Enseñar la lista desordenada
     for (int i = 0; i < listanumeros.Count; i++)
     {
         Console.WriteLine(listanumeros[i]);
@@ -33,3 +31,24 @@ do
     continuar = Console.ReadKey().Key;
 }while(continuar != ConsoleKey.C);
 
+List<int> listanumerosord = new List<int>();
+
+//Ordenar de menor a mayor
+while (listanumeros.Count > 0)
+{
+    //Iniciar variable para ordenar en -1
+    int maxNumber = -1;
+        //recorrer lista de numeros
+        foreach (var number in listanumeros) 
+        {
+            //si el numero es mayor actualizar maxNumber
+            if(number > maxNumber) 
+            {
+                maxNumber = number;
+            }
+        }
+    //Añadir el numero más grande a la lista de numeros ordenados
+    listanumerosord.Add(maxNumber);
+    //Borrarlo de la lista de numeros desordenados
+    listanumeros.Remove(maxNumber);
+}
