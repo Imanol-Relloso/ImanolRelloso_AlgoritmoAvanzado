@@ -37,12 +37,12 @@ List<int> listanumerosord = new List<int>();
 while (listanumeros.Count > 0)
 {
     //Iniciar variable para ordenar en -1
-    int maxNumber = -1;
+    int maxNumber = 100000;
         //recorrer lista de numeros
         foreach (var number in listanumeros) 
         {
             //si el numero es mayor actualizar maxNumber
-            if(number > maxNumber) 
+            if(number < maxNumber) 
             {
                 maxNumber = number;
             }
