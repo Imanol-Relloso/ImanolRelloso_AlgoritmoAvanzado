@@ -20,4 +20,16 @@ do
 } while (continuar == ConsoleKey.S);
 
 Console.Clear();
-Console.WriteLine(listanumeros);
+Console.WriteLine("Lista de números proporcionada:");
+do
+{
+    //enseñar la lista desordenada
+    for (int i = 0; i < listanumeros.Count; i++)
+    {
+        Console.WriteLine(listanumeros[i]);
+    }
+    //Preguntar para seguir
+    Console.WriteLine("Pulse C para contiuar");
+    continuar = Console.ReadKey().Key;
+}while(continuar != ConsoleKey.C);
+
